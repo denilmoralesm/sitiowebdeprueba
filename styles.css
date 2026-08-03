@@ -221,3 +221,97 @@ footer span {
         width: 100%;
     }
 }
+
+
+.btn-modo {
+    background: #212121;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn-modo:hover {
+    background: #000;
+    transform: scale(1.08);
+}
+
+.btn-modo:active {
+    transform: scale(0.95);
+}
+
+body.oscuro {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+body.oscuro header {
+    background: #7b1e1e;
+}
+
+body.oscuro nav {
+    background: #4b0000;
+}
+
+body.oscuro nav a {
+    color: white;
+}
+
+body.oscuro main {
+    background: #1f1f1f;
+    color: white;
+}
+
+body.oscuro section {
+    background: transparent;
+    color: white;
+}
+
+body.oscuro h2 {
+    color: #ff8a80;
+}
+
+body.oscuro .contacto-info {
+    background: #263238;
+    border-left: 5px solid #64b5f6;
+}
+
+body.oscuro .formulario-contacto {
+    background: #2b2b2b;
+    border: 1px solid #555;
+}
+
+body.oscuro input,
+body.oscuro textarea {
+    background: #3a3a3a;
+    color: white;
+    border: 2px solid #666;
+}
+
+body.oscuro input::placeholder,
+body.oscuro textarea::placeholder {
+    color: #ccc;
+}
+
+body.oscuro label {
+    color: white;
+}
+
+body.oscuro hr {
+    border-top: 2px solid #555;
+}
+
+body.oscuro footer {
+    background: #000;
+    color: white;
+}
+
+body.oscuro .btn-modo {
+    background: #ffd54f;
+    color: #222;
+}
+
+body.oscuro .btn-modo:hover {
+    background: #ffca28;
+}
