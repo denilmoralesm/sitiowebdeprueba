@@ -57,15 +57,15 @@
 
         <section class="formulario-contacto">
             <h2>Envíanos un mensaje</h2>
-            <form>
+            <form id="form-pedido" novalidate>
                 <div class="form-group">
                     <label for="nombre">Nombre completo:</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
                 </div>
 
                 <div class="form-group">
@@ -74,6 +74,8 @@
                 </div>
 
                 <button type="submit" class="btn-enviar">Enviar mensaje</button>
+
+                <p id="aviso-contacto" class="aviso"></p>
             </form>
         </section>
 

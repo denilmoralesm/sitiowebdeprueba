@@ -44,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
 
@@ -55,7 +55,7 @@ main {
     border-radius: 12px;
     width: 90%;
     max-width: 1000px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -198,25 +198,25 @@ footer span {
         gap: 10px;
         padding: 15px;
     }
-    
+
     main {
         padding: 15px;
         width: 95%;
         margin: 15px auto;
     }
-    
+
     section {
         padding: 5px 0;
     }
-    
+
     header h1 {
         font-size: 28px;
     }
-    
+
     .formulario-contacto {
         padding: 15px;
     }
-    
+
     .btn-enviar {
         width: 100%;
     }
@@ -314,4 +314,20 @@ body.oscuro .btn-modo {
 
 body.oscuro .btn-modo:hover {
     background: #ffca28;
+}
+
+
+.aviso {
+    display: none;
+    margin-top: 14px;
+}
+
+.aviso.error {
+    display: block;
+    color: #63261e;
+}
+
+.aviso.exito {
+    display: block;
+    color: #1a7f4f;
 }
