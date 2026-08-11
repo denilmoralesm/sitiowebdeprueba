@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Ferretería</title>
+</head>
+
+<body>
+    <main>
+        <section class="formulario-contacto">
+            <h2>Envíanos un mensaje</h2>
+            <form id="form-pedido" method="POST" novalidate action="procesar.php">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+
+                <p id="aviso-contacto" class="aviso"></p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
