@@ -3,6 +3,7 @@
     $correo = $_POST["correo"];
     $consulta = $_POST["consulta"];
 
+    echo "<h1>Cita reservada en Óptica Mirasol</h1>";
     echo "<p><strong>Nombre:</strong> $nombre</p>";
     echo "<p><strong>Correo:</strong> $correo</p>";
     echo "<p><strong>Consulta:</strong> $consulta</p>";
