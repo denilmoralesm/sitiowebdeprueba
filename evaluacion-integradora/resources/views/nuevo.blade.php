@@ -9,7 +9,7 @@
     </ul>
   @endif
 
-  <form action="/herramientas/nuevo" method="POST">
+  <form novalidate action="/herramientas/nuevo" method="POST">
     @csrf
 
     <p>
