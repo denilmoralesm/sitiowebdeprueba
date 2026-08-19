@@ -1,8 +1,15 @@
 @extends('layouts.base')
 
 @section('contenido')
+  @if ($errors->any())
+    <ul style="color: #b00020;">
+      @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+      @endforeach
+    </ul>
+  @endif
 
-  <form action="/nuevo" method="POST">
+  <form action="/herramientas/nuevo" method="POST">
     @csrf
 
     <p>
@@ -18,5 +25,5 @@
     <p><button type="submit">Registrar herramienta</button></p>
   </form>
 
-  <p><a href="/">Volver a la lista</a></p>
+  <p><a href="/herramientas">Volver a la lista</a></p>
 @endsection
