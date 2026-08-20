@@ -62,12 +62,16 @@ Route::middleware('auth')->group(function () {
             'precio' => 'required|integer|min:1',
             'descripcion' => 'nullable|string|max:500',
             'destacado' => 'nullable|boolean',
+            'stock' => 'required|integer|min:0',
         ], [
             'nombre.required' => 'El nombre del producto es obligatorio.',
             'precio.required' => 'El precio es obligatorio.',
             'precio.integer' => 'El precio debe ser un número entero.',
             'precio.min' => 'El precio debe ser al menos 1 Bs.',
             'categoria_id.exists' => 'La categoría seleccionada no es válida.',
+            'stock.required' => 'El stock es obligatorio.',
+            'stock.integer' => 'El stock debe ser un número entero.',
+            'stock.min' => 'El stock debe ser al menos 0.',
         ]);
 
         Producto::create([
@@ -76,6 +80,7 @@ Route::middleware('auth')->group(function () {
             'precio' => $request->input('precio'),
             'descripcion' => $request->input('descripcion'),
             'destacado' => $request->has('destacado'),
+            'stock' => $request->input('stock'),
         ]);
 
         return redirect('/admin/productos')->with('exito', 'Producto creado correctamente.');
@@ -99,6 +104,7 @@ Route::middleware('auth')->group(function () {
             'precio' => 'required|integer|min:1',
             'descripcion' => 'nullable|string|max:500',
             'destacado' => 'nullable|boolean',
+            'stock' => 'required|integer|min:0',
         ], [
             'nombre.required' => 'El nombre del producto es obligatorio.',
             'precio.required' => 'El precio es obligatorio.',
@@ -113,6 +119,7 @@ Route::middleware('auth')->group(function () {
             'precio' => $request->input('precio'),
             'descripcion' => $request->input('descripcion'),
             'destacado' => $request->has('destacado'),
+            'stock' => $request->input('stock'),
         ]);
 
         return redirect('/admin/productos')->with('exito', 'Producto actualizado correctamente.');

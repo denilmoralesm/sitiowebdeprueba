@@ -23,6 +23,7 @@
                         <th>Nombre</th>
                         <th>Categoría</th>
                         <th>Precio</th>
+                        <th>Stock</th>
                         <th>Destacado</th>
                         <th>Acciones</th>
                     </tr>
@@ -34,6 +35,7 @@
                             <td>{{ $producto->nombre }}</td>
                             <td>{{ $producto->categoria->nombre ?? 'Sin categoría' }}</td>
                             <td>Bs {{ number_format($producto->precio, 0, ',', '.') }}</td>
+                            <td>{{ $producto->stock }}</td>
                             <td>{{ $producto->destacado ? '★ Sí' : '-' }}</td>
                             <td>
                                 <div class="acciones">

@@ -16,7 +16,8 @@ class Producto extends Model
         'categoria_id',
         'precio',
         'descripcion',
-        'destacado'
+        'destacado',
+        'stock'
     ];
 
     public function categoria()

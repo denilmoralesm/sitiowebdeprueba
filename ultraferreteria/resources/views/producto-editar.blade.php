@@ -47,6 +47,11 @@
             </div>
 
             <div class="form-group">
+                <label for="stock">Stock:</label>
+                <input type="number" id="stock" name="stock" value="{{ old('stock', $producto->stock) }}" min="0">
+            </div>
+
+            <div class="form-group">
                 <label for="descripcion">Descripción:</label>
                 <textarea id="descripcion" name="descripcion">{{ old('descripcion', $producto->descripcion) }}</textarea>
             </div>

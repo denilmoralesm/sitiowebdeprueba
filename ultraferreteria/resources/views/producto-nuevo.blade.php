@@ -57,6 +57,11 @@
                 </label>
             </div>
 
+            <div class="form-group">
+                <label for="stock">Stock:</label>
+                <input type="number" id="stock" name="stock" value="{{ old('stock', 0) }}" min="0">
+            </div>
+
             <button type="submit" class="btn-guardar">Guardar Producto</button>
             <a href="/admin/productos" class="btn-volver" style="margin-left: 10px;">Cancelar</a>
         </form>
